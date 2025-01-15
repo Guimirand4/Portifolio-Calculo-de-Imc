@@ -48,7 +48,7 @@ input {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield; /* Remover setas dos inputs numéricos */
+  -moz-appearance: textfield; 
 }
 
 input:focus {
