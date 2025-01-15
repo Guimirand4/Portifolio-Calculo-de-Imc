@@ -48,7 +48,7 @@ input {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield; 
+  -moz-appearance: textfield;
 }
 
 input:focus {
@@ -87,4 +87,63 @@ button:hover {
   font-size: 1.2em;
   color: #7a3d6d; /* Cor do texto no resultado */
   margin: 5px 0;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input {
+    font-size: 0.95em;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  #resultado p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  label {
+    font-size: 0.9em;
+  }
+
+  input {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  #resultado p {
+    font-size: 1em;
+  }
 }
