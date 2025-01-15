@@ -1,0 +1,90 @@
+/* Estilos Gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: pink; /* Fundo suave */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Título */
+h1 {
+  font-size: 2.2em;
+  color: #d28dce; /* Rosa suave */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo dos labels */
+label {
+  font-size: 1.1em;
+  color: #8a6d7e; /* Cinza suave */
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Estilo dos inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #e1c9d3;
+  font-size: 1em;
+  color: #333;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Remover setas dos inputs numéricos */
+}
+
+input:focus {
+  outline: none;
+  border-color: #d28dce; /* Cor do foco */
+}
+
+/* Estilo do botão */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d28dce; /* Cor de fundo do botão */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b872b2; /* Cor mais escura ao passar o mouse */
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #f0e4f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resultado p {
+  font-size: 1.2em;
+  color: #7a3d6d; /* Cor do texto no resultado */
+  margin: 5px 0;
+}
