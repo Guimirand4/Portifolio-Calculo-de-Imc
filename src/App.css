@@ -1,6 +1,7 @@
+/* Estilos Gerais */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: pink; /* Fundo suave */
+  background-color: pink !important; /* Fundo suave */
   margin: 0;
   padding: 0;
   display: flex;
@@ -17,12 +18,15 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
+  margin-top: 50px; 
+  min-height: 300px; 
+  height: auto; 
 }
 
 /* Título */
 h1 {
   font-size: 2.2em;
-  color: #d28dce; /* Rosa suave */
+  color: #d28dce !important; 
   text-align: center;
   margin-bottom: 20px;
 }
@@ -30,12 +34,12 @@ h1 {
 /* Estilo dos labels */
 label {
   font-size: 1.1em;
-  color: #8a6d7e; /* Cinza suave */
+  color: #8a6d7e; 
   margin-bottom: 8px;
   display: block;
 }
 
-/* Estilo dos inputs */
+
 input {
   width: 100%;
   padding: 10px;
@@ -55,9 +59,11 @@ input:focus {
   border-color: #d28dce; /* Cor do foco */
 }
 
+
 /* Estilo do botão */
 button {
   width: 100%;
+  margin-top: 15px !important;
   padding: 12px;
   background-color: #d28dce; /* Cor de fundo do botão */
   color: #fff;
@@ -82,67 +88,32 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#resultado p {
+.resultado-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de excluir */
+.excluir-botao {
+  background-color: #ff99cc; /* Rosa */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
   font-size: 1.2em;
-  color: #7a3d6d; /* Cor do texto no resultado */
-  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Media Queries para dispositivos móveis */
-@media (max-width: 768px) {
-  .container {
-    padding: 20px;
-    width: 90%;
-  }
-
-  h1 {
-    font-size: 1.8em;
-  }
-
-  label {
-    font-size: 1em;
-  }
-
-  input {
-    font-size: 0.95em;
-    padding: 8px;
-  }
-
-  button {
-    font-size: 1em;
-    padding: 10px;
-  }
-
-  #resultado p {
-    font-size: 1.1em;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 15px;
-    width: 95%;
-  }
-
-  h1 {
-    font-size: 1.6em;
-  }
-
-  label {
-    font-size: 0.9em;
-  }
-
-  input {
-    font-size: 0.9em;
-    padding: 6px;
-  }
-
-  button {
-    font-size: 0.9em;
-    padding: 8px;
-  }
-
-  #resultado p {
-    font-size: 1em;
-  }
+.excluir-botao:hover {
+  background-color: #e088b3;
 }
